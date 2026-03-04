@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { OrdersHistoryDetailsWidget } from "@/widgets/orders-history-details";
 
 interface Props {
@@ -7,9 +6,7 @@ interface Props {
 }
 
 export const OrderDetailsPage = ({ id }: Props) => {
-  if (!id) {
-    notFound();
-  }
+
 
   return (
     <main className="min-h-screen bg-slate-50 py-6 px-4">
