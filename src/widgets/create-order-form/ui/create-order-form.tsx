@@ -313,7 +313,7 @@ export const CreateOrderFormWidget = () => {
           </div>
         )}
 
-        <div className="flex flex-col gap-3 border-t border-slate-100 pt-4 md:flex-row md:items-center md:justify-between">
+        <div className="flex border-t border-slate-100 pt-4 justify-between">
           <div className="flex gap-2">
             <Button
               type="button"

@@ -4,7 +4,7 @@ import { Button } from "@/shared/ui/button";
 
 export const OrdersHistoryPage = () => {
   return (
-    <main className="min-h-screen bg-slate-50 py-6 px-4">
+    <main className="min-h-screen py-6 px-4">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-6">
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>

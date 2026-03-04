@@ -2,7 +2,7 @@ import { CreateOrderFormWidget } from "@/widgets/create-order-form";
 
 export const CreateOrderPage = () => {
   return (
-    <main className="min-h-screen bg-slate-50 py-6 px-4">
+    <main className="min-h-screen py-6 px-4">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-6">
         <header className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>

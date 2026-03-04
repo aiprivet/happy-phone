@@ -1,12 +1,12 @@
 import { OrderDetailsPage } from "@/pages/orders-history/ui/order-details-page";
 
-interface Params {
-  params: {
+type Params = {
+  params: Promise<{
     id: string;
-  };
-}
+  }>;
+};
 
-export default function OrderDetailsRoute({ params }: Params) {
-  return <OrderDetailsPage id={params.id} />;
+export default async function OrderDetailsRoute({ params }: Params) {
+  const { id } = await params;
+  return <OrderDetailsPage id={id} />;
 }
-

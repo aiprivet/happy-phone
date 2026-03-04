@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import { OrdersHistoryDetailsWidget } from "@/widgets/orders-history-details";
 
@@ -6,8 +7,6 @@ interface Props {
 }
 
 export const OrderDetailsPage = ({ id }: Props) => {
-
-
   return (
     <main className="min-h-screen bg-slate-50 py-6 px-4">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
@@ -27,7 +26,6 @@ export const OrderDetailsPage = ({ id }: Props) => {
             ← Вернуться к истории заявок
           </Link>
         </header>
-
         <OrdersHistoryDetailsWidget id={id} />
       </div>
     </main>
